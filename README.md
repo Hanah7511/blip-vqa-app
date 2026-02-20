@@ -30,22 +30,6 @@ Users can:
 
 ---
 
-## 🎥 Demo
-
-### 🖼️ Visual Question Answering using BLIP
-The application allows users to:
-- Upload an image
-- Ask natural language questions
-- Receive AI-generated answers using BLIP VQA model
-
-### Example:
-**Question:** What is this?  
-**Answer:** Dog  
-
-![Demo Screenshot](demo_blip_vqa.png)
-
----
-
 ## 🛠️ Tech Stack
 - Python
 - Streamlit (Web App)
@@ -76,6 +60,22 @@ The application allows users to:
 
 ---
 
+## 🎥 Demo
+
+### 🖼️ Visual Question Answering using BLIP
+The application allows users to:
+- Upload an image
+- Ask natural language questions
+- Receive AI-generated answers using BLIP VQA model
+
+### Example:
+**Question:** What is this?  
+**Answer:** Dog  
+
+![Demo Screenshot](demo_blip_vqa.png)
+
+---
+
 ## 📸 Demo Use Cases
 - Object recognition in images
 - Scene understanding
@@ -89,7 +89,7 @@ The application allows users to:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+git clone https://github.com/Hana7511/blip-vqa-app.git
 cd YOUR-REPO-NAME
 
 ### 2️⃣ Create Virtual Environment (Recommended)
@@ -103,6 +103,14 @@ pip install -r requirements.txt
 
 ---
 
+▶️ Running the App
+streamlit run app.py
+
+Then open:
+http://localhost:8501
+
+---
+
 📊 Project Structure
 
 ```
@@ -111,7 +119,7 @@ Visual-Question-Answering/
 ├── app.py                # Streamlit application
 ├── README.md             # Project documentation
 ├── requirements.txt      # Dependencies
-└── demo_assets/          # (Optional demo images)
+└── demo_assets/          # (demo images)
 ```
 
 ---
@@ -138,3 +146,4 @@ Visual-Question-Answering/
 
 AI/ML Student | Multimodal AI & Time-Series Forecasting Projects
 Focused on Machine Learning, NLP, and Applied AI Systems.
+
