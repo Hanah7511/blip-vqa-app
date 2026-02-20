@@ -111,16 +111,68 @@ http://localhost:8501
 
 ---
 
+## 🏗️ System Architecture
+
+The application follows a multimodal AI architecture integrating computer vision and natural language processing. The Streamlit frontend collects user inputs (image and question), which are preprocessed using the BLIP processor. The processed inputs are then passed to the BLIP VQA transformer model that performs cross-modal reasoning between visual and textual features. The generated answer is decoded and displayed in the UI along with session-based Q&A history for interactive user experience.
+
+```
++------------------------+
+|        User            |
+| Upload Image + Question|
++-----------+------------+
+            |
+            v
++------------------------+
+|    Streamlit Frontend  |
+|  - Image Upload        |
+|  - Text Input          |
+|  - Sidebar Demo Images |
++-----------+------------+
+            |
+            v
++------------------------+
+|   Input Processing     |
+|  - PIL Image Loading   |
+|  - Question Encoding   |
+|  - BLIP Processor      |
++-----------+------------+
+            |
+            v
++------------------------------+
+|   BLIP VQA Model (HuggingFace)|
+|  - Vision Encoder            |
+|  - Language Encoder          |
+|  - Cross-modal Attention     |
++-----------+------------------+
+            |
+            v
++------------------------+
+|   Answer Generation    |
+|  - Text Decoding       |
+|  - Skip Special Tokens |
++-----------+------------+
+            |
+            v
++------------------------+
+|  Output Layer (UI)     |
+|  - Display Answer      |
+|  - Session Q&A History |
++------------------------+
+```
+
 📊 Project Structure
 
 ```
-
-Visual-Question-Answering/
+blip-vqa-app/
 │
-├── app.py                # Streamlit application
-├── README.md             # Project documentation
-├── requirements.txt      # Dependencies
-└── demo_assets/          # (Optional demo images)
+├── .git
+├── .venv
+├── assets/
+├── .gitignore
+├── ABOUT_PROJECT.txt
+├── app.py
+├── README.md
+├── requirements.txt
 
 ```
 
@@ -148,5 +200,6 @@ Visual-Question-Answering/
 
 AI/ML Student | Multimodal AI & Time-Series Forecasting Projects
 Focused on Machine Learning, NLP, and Applied AI Systems.
+
 
 
