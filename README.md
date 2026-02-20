@@ -114,12 +114,14 @@ http://localhost:8501
 📊 Project Structure
 
 ```
+
 Visual-Question-Answering/
 │
 ├── app.py                # Streamlit application
 ├── README.md             # Project documentation
 ├── requirements.txt      # Dependencies
-└── demo_assets/          # (demo images)
+└── demo_assets/          # (Optional demo images)
+
 ```
 
 ---
@@ -146,4 +148,5 @@ Visual-Question-Answering/
 
 AI/ML Student | Multimodal AI & Time-Series Forecasting Projects
 Focused on Machine Learning, NLP, and Applied AI Systems.
+
 
