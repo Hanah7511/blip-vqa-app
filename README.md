@@ -94,6 +94,14 @@ The BLIP model uses a transformer-based architecture that jointly processes imag
 
 ---
 
+## 🖼️ Application Demo
+
+<p align="center">
+  <img src="assets/demo.png" alt="BLIP VQA Demo" width="800"/>
+</p>
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -182,5 +190,6 @@ http://localhost:8501
 
 👩‍💻 Author
 
-Hana Alharis
+Hana Al Haris
 AI/ML Student | Multimodal AI & Time-Series Projects
+
